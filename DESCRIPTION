@@ -1,0 +1,20 @@
+Package: testvirtualclass
+Title: Reproducible Example of a Virtual Class
+Version: 0.0
+Authors@R: person("Thierry", "Onkelinx", , "thierry.onkelinx@inbo.be", role = c("aut", "cre"))
+Description: Generates a minimal reprodicible example about using a virtual
+    class.
+Depends:
+    R (>= 3.2.0)
+License: GPL-2
+LazyData: true
+Imports:
+    lme4,
+    methods
+Suggests:
+    testthat
+Collate:
+    'my_virtual_class.R'
+    'my_lmer_class.R'
+    'my_lmer.R'
+    'my_lmer_model_class.R'
