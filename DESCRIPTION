@@ -15,6 +15,7 @@ Suggests:
     INLA,
     testthat
 Collate:
+    'my_metadata_class.R'
     'my_virtual_class.R'
     'my_inla_class.R'
     'my_inla_model_class.R'

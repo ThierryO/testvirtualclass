@@ -42,12 +42,15 @@ setMethod(
     new(
       "my_lmer",
       Data = data,
-      Meta1 = meta1,
-      Meta2 = meta2,
-      Meta3 = meta3,
-      Meta4 = meta4,
-      Meta5 = meta5,
-      Meta6 = meta6,
+      Meta = new(
+        "my_metadata",
+        Meta1 = meta1,
+        Meta2 = meta2,
+        Meta3 = meta3,
+        Meta4 = meta4,
+        Meta5 = meta5,
+        Meta6 = meta6
+      ),
       Status = status,
       Weight = weight
     )
@@ -68,12 +71,7 @@ setMethod(
     new(
       "my_lmer_model",
       Data = data@Data,
-      Meta1 = data@Meta1,
-      Meta2 = data@Meta2,
-      Meta3 = data@Meta3,
-      Meta4 = data@Meta4,
-      Meta5 = data@Meta5,
-      Meta6 = data@Meta6,
+      Meta = data@Meta,
       Status = status,
       Model = model.fit
     )
