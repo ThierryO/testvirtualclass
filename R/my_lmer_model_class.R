@@ -18,23 +18,3 @@ setClass(
   ),
   contains = "my_lmer"
 )
-
-#' @rdname my_lmer
-#' @aliases my_lmer,lmerMod-methods
-#' @importFrom methods setMethod
-setMethod(
-  f = "my_lmer", 
-  signature = signature(data = "my_lmer", model.fit = "lmerMod"), 
-  definition = function(
-    data, meta1, status, weight, model.fit
-  ){
-    new(
-      "my_lmer_model",
-      Data = data@Data,
-      Meta1 = data@Meta1,
-      Status = status,
-      Weight = data@Weight,
-      Model = model.fit
-    )
-  }
-)

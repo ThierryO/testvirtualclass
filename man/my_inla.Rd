@@ -3,16 +3,18 @@
 \docType{methods}
 \name{my_inla}
 \alias{my_inla}
-\alias{my_inla,ANY,ANY,ANY,ANY-method}
-\alias{my_inla,my_inla,ANY,ANY,inla-method}
+\alias{my_inla,ANY,ANY,ANY,ANY,ANY,ANY,ANY,ANY,ANY-method}
+\alias{my_inla,my_inla,ANY,ANY,ANY,ANY,ANY,ANY,ANY,inla-method}
 \alias{my_inla,my_inla-methods}
 \title{Create a my_inla object}
 \usage{
-my_inla(data, meta1, status, model.fit)
+my_inla(data, meta1, meta2, meta3, meta4, meta5, meta6, status, model.fit)
 
-\S4method{my_inla}{ANY,ANY,ANY,ANY}(data, meta1, status, model.fit)
+\S4method{my_inla}{ANY,ANY,ANY,ANY,ANY,ANY,ANY,ANY,ANY}(data, meta1, meta2,
+  meta3, meta4, meta5, meta6, status, model.fit)
 
-\S4method{my_inla}{my_inla,ANY,ANY,inla}(data, meta1, status, model.fit)
+\S4method{my_inla}{my_inla,ANY,ANY,ANY,ANY,ANY,ANY,ANY,inla}(data, meta1, meta2,
+  meta3, meta4, meta5, meta6, status, model.fit)
 }
 \arguments{
 \item{data}{the dataset}

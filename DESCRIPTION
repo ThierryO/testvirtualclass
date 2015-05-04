@@ -20,5 +20,5 @@ Collate:
     'my_inla_model_class.R'
     'my_inla.R'
     'my_lmer_class.R'
-    'my_lmer.R'
     'my_lmer_model_class.R'
+    'my_lmer.R'
