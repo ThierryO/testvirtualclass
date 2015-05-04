@@ -1,8 +1,5 @@
 #' Create a my_inla object
-#' @param data the dataset
-#' @param meta1 the first metadata
-#' @param status the status of the analysis
-#' @param model.fit The fitted model
+#' @inheritParams my_lmer
 #' @name my_inla
 #' @rdname my_inla
 #' @exportMethod my_inla

@@ -21,6 +21,16 @@ my_inla(data, meta1, meta2, meta3, meta4, meta5, meta6, status, model.fit)
 
 \item{meta1}{the first metadata}
 
+\item{meta2}{the second metadata}
+
+\item{meta3}{the third metadata}
+
+\item{meta4}{the fourth metadata}
+
+\item{meta5}{the fifth metadata}
+
+\item{meta6}{the sixth metadata}
+
 \item{status}{the status of the analysis}
 
 \item{model.fit}{The fitted model}
