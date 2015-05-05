@@ -9,8 +9,7 @@ Depends:
 License: GPL-2
 LazyData: true
 Imports:
-    lme4,
-    methods
+    lme4
 Suggests:
     INLA,
     testthat

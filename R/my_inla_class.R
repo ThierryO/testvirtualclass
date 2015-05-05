@@ -3,7 +3,6 @@
 #' @rdname my_inla-class
 #' @exportClass my_inla
 #' @aliases my_inla-class
-#' @importFrom methods setClass
 #' @docType class
 #' @include my_virtual_class.R
 setClass(

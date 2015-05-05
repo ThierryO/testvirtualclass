@@ -7,7 +7,6 @@
 #' @rdname my_lmer_model-class
 #' @exportClass my_lmer_model
 #' @aliases my_lmer_model-class
-#' @importFrom methods setClass
 #' @importClassesFrom lme4 lmerMod
 #' @docType class
 #' @include my_lmer_class.R

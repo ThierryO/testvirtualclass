@@ -1,4 +1,3 @@
-#' @importFrom methods setOldClass
 setOldClass("inla")
 
 #' The my_inla class
@@ -6,7 +5,6 @@ setOldClass("inla")
 #' @rdname my_inla_model-class
 #' @exportClass my_inla_model
 #' @aliases my_inla_model-class
-#' @importFrom methods setClass
 #' @docType class
 #' @include my_inla_class.R
 setClass(

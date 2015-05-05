@@ -4,7 +4,6 @@
 #' @rdname my_inla
 #' @exportMethod my_inla
 #' @docType methods
-#' @importFrom methods setGeneric
 setGeneric(
   name = "my_inla", 
   def = function(
@@ -16,7 +15,6 @@ setGeneric(
 
 #' @rdname my_inla
 #' @aliases my_inla,my_inla-methods
-#' @importFrom methods setMethod
 #' @include my_inla_class.R
 setMethod(
   f = "my_inla", 
@@ -43,7 +41,6 @@ setMethod(
 
 #' @rdname my_inla
 #' @aliases my_inla,my_inla-methods
-#' @importFrom methods setMethod
 #' @include my_inla_class.R
 #' @include my_inla_model_class.R
 setMethod(

@@ -13,7 +13,6 @@
 #' @rdname my_lmer
 #' @exportMethod my_lmer
 #' @docType methods
-#' @importFrom methods setGeneric
 setGeneric(
   name = "my_lmer", 
   def = function(
@@ -25,7 +24,6 @@ setGeneric(
 
 #' @rdname my_lmer
 #' @aliases my_lmer,my_lmer-methods
-#' @importFrom methods setMethod
 #' @include my_lmer_class.R
 setMethod(
   f = "my_lmer", 
@@ -56,7 +54,6 @@ setMethod(
 
 #' @rdname my_lmer
 #' @aliases my_lmer,my_lmer-methods
-#' @importFrom methods setMethod
 #' @include my_lmer_class.R
 #' @include my_lmer_model_class.R
 setMethod(

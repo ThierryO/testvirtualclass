@@ -15,7 +15,6 @@
 #' @rdname my_virtual-class
 #' @exportClass my_virtual
 #' @aliases my_virtual-class
-#' @importFrom methods setClass
 #' @docType class
 setClass(
   "my_virtual",
