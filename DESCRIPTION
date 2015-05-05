@@ -5,7 +5,7 @@ Authors@R: person("Thierry", "Onkelinx", , "thierry.onkelinx@inbo.be", role = c(
 Description: Generates a minimal reprodicible example about using a virtual
     class.
 Depends:
-    R (>= 3.2.0)
+    R (>= 3.1.2)
 License: GPL-2
 LazyData: true
 Imports:
