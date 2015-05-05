@@ -2,7 +2,6 @@
 
 exportClasses(my_lmer)
 exportClasses(my_lmer_model)
-exportClasses(my_virtual)
 exportMethods(my_lmer)
 importClassesFrom(lme4,lmerMod)
 importFrom(methods,setClass)

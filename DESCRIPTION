@@ -13,7 +13,6 @@ Imports:
 Suggests:
     testthat
 Collate:
-    'my_virtual_class.R'
     'my_lmer_class.R'
     'my_lmer_model_class.R'
     'my_lmer.R'
