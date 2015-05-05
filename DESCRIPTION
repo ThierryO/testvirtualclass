@@ -9,16 +9,11 @@ Depends:
 License: GPL-2
 LazyData: true
 Imports:
-    lme4,
-    methods
+    lme4
 Suggests:
-    INLA,
     testthat
 Collate:
     'my_virtual_class.R'
-    'my_inla_class.R'
-    'my_inla_model_class.R'
-    'my_inla.R'
     'my_lmer_class.R'
     'my_lmer_model_class.R'
     'my_lmer.R'
