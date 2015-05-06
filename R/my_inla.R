@@ -37,7 +37,8 @@ setMethod(
       Meta4 = dots$meta4,
       Meta5 = dots$meta5,
       Meta6 = dots$meta6,
-      Status = dots$status
+      Status = dots$status,
+      Model = NULL
     )
   }
 )
@@ -46,7 +47,6 @@ setMethod(
 #' @aliases my_inla,my_inla-methods
 #' @importFrom methods setMethod
 #' @include my_inla_class.R
-#' @include my_inla_model_class.R
 setMethod(
   f = "my_inla", 
   signature = signature(data = "my_inla", model.fit = "inla"),
@@ -55,7 +55,7 @@ setMethod(
   ){
     dots <- list(...)
     new(
-      "my_inla_model",
+      "my_inla",
       Data = data@Data,
       Meta1 = data@Meta1,
       Meta2 = data@Meta2,

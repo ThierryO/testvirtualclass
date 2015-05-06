@@ -7,4 +7,10 @@
 \description{
 The my_inla class
 }
+\section{Slots}{
+
+  \describe{
+   \item{\code{Model}}{Either a inla model or NULL}
+  }
+}
 

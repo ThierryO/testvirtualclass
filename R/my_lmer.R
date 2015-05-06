@@ -1,7 +1,7 @@
 #' Create a my_lmer object
 #' @param data the dataset
-#' @param ... other arguments
 #' @param model.fit The fitted model
+#' @param ... other arguments
 #' @name my_lmer
 #' @rdname my_lmer
 #' @exportMethod my_lmer
@@ -43,7 +43,8 @@ setMethod(
       Meta5 = dots$meta5,
       Meta6 = dots$meta6,
       Status = dots$status,
-      Weight = dots$weight
+      Weight = dots$weight,
+      Model = NULL
     )
   }
 )
@@ -52,7 +53,6 @@ setMethod(
 #' @aliases my_lmer,my_lmer-methods
 #' @importFrom methods setMethod
 #' @include my_lmer_class.R
-#' @include my_lmer_model_class.R
 setMethod(
   f = "my_lmer", 
   signature = signature(data = "my_lmer", model.fit = "lmerMod"),
@@ -61,7 +61,7 @@ setMethod(
   ){
     dots <- list(...)
     new(
-      "my_lmer_model",
+      "my_lmer",
       Data = data@Data,
       Meta1 = data@Meta1,
       Meta2 = data@Meta2,

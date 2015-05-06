@@ -11,6 +11,7 @@ The my_lmer class
 
   \describe{
    \item{\code{Weight}}{the name of the weight variable or "" if unweighted}
+   \item{\code{Model}}{Either a lmer model or NULL}
   }
 }
 
