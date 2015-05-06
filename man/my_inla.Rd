@@ -3,35 +3,21 @@
 \docType{methods}
 \name{my_inla}
 \alias{my_inla}
-\alias{my_inla,ANY,ANY,ANY,ANY,ANY,ANY,ANY,ANY,ANY-method}
-\alias{my_inla,my_inla,ANY,ANY,ANY,ANY,ANY,ANY,ANY,inla-method}
+\alias{my_inla,ANY,ANY-method}
+\alias{my_inla,my_inla,inla-method}
 \alias{my_inla,my_inla-methods}
 \title{Create a my_inla object}
 \usage{
-my_inla(data, meta1, meta2, meta3, meta4, meta5, meta6, status, model.fit)
+my_inla(data, ..., model.fit)
 
-\S4method{my_inla}{ANY,ANY,ANY,ANY,ANY,ANY,ANY,ANY,ANY}(data, meta1, meta2,
-  meta3, meta4, meta5, meta6, status, model.fit)
+\S4method{my_inla}{ANY,ANY}(data, ..., model.fit)
 
-\S4method{my_inla}{my_inla,ANY,ANY,ANY,ANY,ANY,ANY,ANY,inla}(data, meta1, meta2,
-  meta3, meta4, meta5, meta6, status, model.fit)
+\S4method{my_inla}{my_inla,inla}(data, ..., model.fit)
 }
 \arguments{
 \item{data}{the dataset}
 
-\item{meta1}{the first metadata}
-
-\item{meta2}{the second metadata}
-
-\item{meta3}{the third metadata}
-
-\item{meta4}{the fourth metadata}
-
-\item{meta5}{the fifth metadata}
-
-\item{meta6}{the sixth metadata}
-
-\item{status}{the status of the analysis}
+\item{...}{other arguments}
 
 \item{model.fit}{The fitted model}
 }

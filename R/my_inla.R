@@ -8,9 +8,9 @@
 setGeneric(
   name = "my_inla", 
   def = function(
-    data, meta1, meta2, meta3, meta4, meta5, meta6, status, model.fit
+    data, ..., model.fit
   ){
-    standard.generic(my_inla)
+    standard.generic("my_inla")
   }
 )
 
@@ -22,21 +22,22 @@ setMethod(
   f = "my_inla", 
   signature = "ANY",
   definition = function(
-    data, meta1, meta2, meta3, meta4, meta5, meta6, status, model.fit
+    data, ..., model.fit
   ){
-    if(missing(status)){
-      status <- "new"
+    dots <- list(...)
+    if(is.null(dots$status)){
+      dots$status <- "new"
     }
     new(
       "my_inla",
       Data = data,
-      Meta1 = meta1,
-      Meta2 = meta2,
-      Meta3 = meta3,
-      Meta4 = meta4,
-      Meta5 = meta5,
-      Meta6 = meta6,
-      Status = status
+      Meta1 = dots$meta1,
+      Meta2 = dots$meta2,
+      Meta3 = dots$meta3,
+      Meta4 = dots$meta4,
+      Meta5 = dots$meta5,
+      Meta6 = dots$meta6,
+      Status = dots$status
     )
   }
 )
@@ -50,8 +51,9 @@ setMethod(
   f = "my_inla", 
   signature = signature(data = "my_inla", model.fit = "inla"),
   definition = function(
-    data, meta1, meta2, meta3, meta4, meta5, meta6, status, model.fit
+    data, ..., model.fit
   ){
+    dots <- list(...)
     new(
       "my_inla_model",
       Data = data@Data,
@@ -61,7 +63,7 @@ setMethod(
       Meta4 = data@Meta4,
       Meta5 = data@Meta5,
       Meta6 = data@Meta6,
-      Status = status,
+      Status = dots$status,
       Model = model.fit
     )
   }
